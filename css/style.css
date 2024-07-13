@@ -1,0 +1,616 @@
+@charset "utf-8";
+
+/* リセットcss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* なめらかにスクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+/*click*/
+a#click-01,
+a#click-02,
+a#click-03,
+a#click-04 {
+  display: block;
+  padding-top: 100px;
+}
+
+/*layout*/
+.inner {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 80%;
+}
+
+body {
+  background-image: url(../images/mainvisual.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.toumei {
+  background-color: rgba(37, 29, 78, 0.8);
+}
+
+.header {
+  background-image: url(../images/top.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin-top: 149px;
+  box-sizing: border-box;
+  background-size: 100%;
+}
+
+.gnav a {
+  color: #e9d494;
+}
+
+.gnav ul {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  font-size: 30px;
+  padding: 0px 20px;
+  background-color: #262747;
+  white-space: nowrap;
+  box-sizing: border-box;
+  top: 0;
+}
+
+
+
+.gnav ul li {
+  /* 最も長い単語と同じくらいの長さ */
+  width: min-content;
+  padding: 2em 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.gnav ul li a {
+  text-decoration: none;
+}
+
+/* 画面の横幅が1024px以下のときにだけPC版のCSSを適用する */
+@media (max-width:1024px) {
+  .gnav ul {
+    font-size: 20px;
+  }
+
+  .gnav ul li {
+    padding: 3.3em 0;
+  }
+}
+
+
+.main-01 {
+  padding-top: 5rem;
+}
+
+.p-section__head {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding: 50px 0;
+  letter-spacing: 0.1em;
+}
+
+.youtube {
+  width: 50%;
+  aspect-ratio: 16 / 9;
+  padding: auto;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+p img {
+  float: left;
+}
+
+.figure {
+  display: flex;
+  color: #fff;
+}
+
+.figure p {
+  color: #fff;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+figure img {
+  width: 50%;
+  height: auto;
+}
+
+.box .name {
+  font-size: 3.5em;
+}
+
+
+.name {
+  color: #fff;
+  margin: 10%;
+}
+
+.self {
+  /* background-color: red; */
+  width: 80%;
+  height: 50%;
+  margin: 10%;
+}
+
+.self .sns {
+  /* background-color: blue; */
+  display: inline-block;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  margin: 5%;
+}
+
+.sns img {
+  padding-left: 100%;
+
+}
+
+.sns ul {
+  display: flex;
+  margin-left: 4rem;
+  font-size: 4rem;
+}
+
+.sns ul li {
+  /* background-color: green; */
+  margin-right: 10%;
+  margin: 0 3rem;
+  justify-content: center;
+}
+
+.size-01 {
+  color: #fff;
+}
+
+.main-01,
+.main-02,
+.main-03,
+.main-04 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* main-03 */
+
+.release {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* background-color: aqua; */
+
+}
+
+.hosi {
+  /* background-color: green; */
+  font-size: 3rem;
+  font-weight: 500;
+  padding-left: 11%;
+}
+
+.btn {
+  color: black;
+  font-weight: 1000;
+  background-color: #e9d494;
+  padding: 0.7rem;
+  border: 2px solid black;
+  text-decoration: none;
+  margin: 13%;
+}
+
+.btn-wrap {
+  margin-bottom: 5%;
+  padding: 2% 1%;
+  margin-top: 3%;
+}
+
+.group-01 {
+  /* background-color: beige; */
+  display: flex;
+  align-items: center;
+}
+
+.area-01 {
+  /* background-color: green; */
+  width: 40%;
+}
+
+.ws-02 {
+  /* background-color: yellow; */
+  padding: 20px 0;
+}
+
+.ws-01 {
+  margin: 5% 0;
+}
+
+.tax {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.day {
+  /* background-color: red; */
+  font-size: 200%;
+  white-space: nowrap;
+  width: 60%;
+  margin-left: 5%;
+
+}
+
+.day .xs:nth-child(3) {
+  margin-bottom: 20%;
+}
+
+.fast {
+  padding-left: 6rem;
+  font-size: 2rem;
+}
+
+.group-02 {
+  /* background-color: darkorchid; */
+  display: flex;
+  padding-left: 0%;
+  align-items: center;
+
+}
+
+.area-02 {
+  /* background-color: darkorange; */
+  width: 40%;
+}
+
+.naiyou {
+  /* background-color: blue; */
+  font-size: 200%;
+  width: 60%;
+}
+
+.naiyou li {
+  margin: 10%;
+
+}
+
+.second {
+  padding-left: 6rem;
+  font-size: 2rem;
+}
+
+/* add cord */
+.day,
+.naiyou {
+  padding: 5rem;
+  box-sizing: border-box;
+}
+
+.fast,
+.second {
+  padding: 0;
+}
+
+.area-01,
+.area-02 {
+  text-align: center;
+  padding: 30px 60px;
+  box-sizing: border-box;
+}
+
+/* main-04 */
+.container {
+  padding: 10%;
+  /* background-color: red; */
+}
+
+.child {
+  padding-left: 0 auto;
+  /* background-color: blue; */
+}
+
+.child img {
+  width: 100%;
+  height: auto;
+}
+
+.ys-second {
+  margin: 5% 0;
+}
+
+.container h3 {
+  /* background-color: red; */
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+/* フッター */
+footer {
+  /* background-color: blueviolet; */
+  padding: 30px 0;
+  /* background-color: #262747; */
+  color: #fff;
+  height: 10%;
+  align-items: center;
+}
+
+
+.sns-footer ul {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.sns-footer ul li {
+  /* background-color: green; */
+  margin-right: 10%;
+  margin: 0 7rem;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.size-02 {
+  color: #fff;
+}
+
+
+.gotop {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0.7;
+}
+
+.gotop:hover {
+  opacity: 1;
+}
+
+
+/* メディアクエリ */
+/* スマホ版画面 */
+/* 画面の横幅が600px以下のときにだけスマホ版のCSSを適用する */
+@media (max-width:600px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .header {
+    background-image: url(../images/レスポンシブ用/サイトロゴ1.png), url(../images/レスポンシブ用/サイトロゴ2.png);
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 500px 400px, contain;
+    background-position: top center, center 300px;
+  }
+
+.gnav {
+  position: relative;
+}
+
+  .gnav ul {
+    display: none;
+    width: 100%;
+  }
+
+  .gnav ul.sp li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .youtube {
+    width: 400px;
+    height: 220px;
+    padding-bottom: 20%;
+  }
+
+  footer {
+    /* background-color: red; */
+    height: 10%;
+  }
+
+  .sns-footer ul {
+    /* background-color: blue; */
+    display: grid;
+    padding: 10%;
+  }
+
+  .sns-footer ul li a {
+    display: block;
+    /* background-color: green; */
+    padding: 10%;
+
+  }
+
+  .inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .figure {
+    flex-direction: column;
+  }
+
+  .group-01,
+  .group-02 {
+    flex-direction: column;
+  }
+
+  .group-02 {
+    flex-direction: column-reverse;
+
+  }
+
+  .area-01,
+  .area-02 {
+    padding: 0;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .day,
+  .naiyou {
+    padding: 0;
+    width: 80%;
+    margin-bottom: 10%;
+  }
+
+  .day {
+    margin-left: 0;
+  }
+
+  .box .name {
+    font-size: 34px;
+  }
+
+  .box .self p {
+    font-size: 30px;
+  }
+
+
+  .self .sns {
+    /* background-color: blue; */
+    display: inline-block;
+    display: flex;
+    width: 3rem;
+    height: 3rem;
+    margin: 5%;
+  }
+
+  .sns img {
+    padding-left: 100%;
+
+  }
+
+  .sns ul {
+    /* background-color: red; */
+    flex-wrap: wrap;
+    padding-bottom: 100%;
+    margin-left: 4rem;
+    font-size: 3rem;
+  }
+
+  .sns ul li {
+    /* background-color: green; */
+    margin-right: 10%;
+    padding: 0.5rem;
+    margin: 0 3rem;
+    justify-content: center;
+  }
+
+  .gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7;
+  }
+
+  .gotop:hover {
+    opacity: 1;
+  }
+
+  /* ナビトグル */
+  #nav-toggle {
+    width: 70px;
+    height: 50px;
+    margin-left: auto;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+
+  #nav-toggle span {
+    width: 30px;
+    height: 4px;
+    display: block;
+    background-color: #e9d494;
+    position: absolute;
+    left: 20px;
+    transition: 0.3s;
+  }
+
+  #nav-toggle span:nth-child(1) {
+    top: 12px;
+  }
+
+  #nav-toggle span:nth-child(2) {
+    top: 23px;
+  }
+
+  #nav-toggle span:nth-child(3) {
+    top: 34px;
+  }
+
+  #nav-toggle.open span:nth-child(1) {
+    top: 23px;
+    transform: rotate(315deg);
+  }
+
+  #nav-toggle.open span:nth-child(2) {
+    left: 50%;
+    width: 0;
+  }
+
+  #nav-toggle.open span:nth-child(3) {
+    top: 23px;
+    transform: rotate(-315deg);
+  }
+
+}
